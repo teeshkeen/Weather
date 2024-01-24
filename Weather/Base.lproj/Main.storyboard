@@ -47,6 +47,10 @@
                             <constraint firstItem="usX-vl-cxA" firstAttribute="top" secondItem="Meg-Wk-kEa" secondAttribute="bottom" constant="31" id="l4r-ad-MF7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getWeatherButton" destination="usX-vl-cxA" id="uAG-9L-TEV"/>
+                        <outlet property="weatherLabel" destination="6bt-tf-KBM" id="jls-oH-lXZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
