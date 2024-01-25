@@ -11,6 +11,7 @@ import CoreLocation
 class ViewController: UIViewController{
 
     @IBOutlet weak var weatherLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var getWeatherButton: UIButton!
     
     var longitude: Double = 0.0
@@ -45,7 +46,7 @@ class ViewController: UIViewController{
             }
 
             let reversedGeoLocation = ReversedGeoLocation(with: placemark)
-            print(reversedGeoLocation.city)
+            self.cityLabel.text = "\(reversedGeoLocation.city)"
         }
         
     }
